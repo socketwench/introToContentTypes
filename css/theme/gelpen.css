@@ -1,5 +1,6 @@
-@import url(../../lib/font/Roboto/roboto.css);
 @import url(../../lib/font/Shadows_Into_Light_Two/shadows_into_light.css);
+@import url(../../lib/font/Raleway/Raleway.css);
+
 /**
  * Gelpen theme for reveal.js. This is the opposite of the 'white' theme.
  *
@@ -25,7 +26,7 @@ body {
 }
 
 .reveal {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 38px;
   font-weight: lighter;
   color: #fff; }
