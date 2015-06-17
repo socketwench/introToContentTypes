@@ -65,34 +65,142 @@
 				</section>
                 <section>
                     <section>
-                        <h1>What are Content Types?</h1>
-                        <aside>
-                            So the first natural question is, just what are content types?
+                        <h1>Drupal and content</h1>
+                        <aside class="notes">
+                            Before we can even begin to talk about content types, let's talk about how Drupal deals
+                            with content
                         </aside>
                     </section>
                     <section data-transition="none">
                         <h2>Nodes and Types</h2>
                         <img src="images/nodesAndTypes1.png">
-                        <aside>
-                            When you first set out to work on content types, it's easy to
-                            only think of it the way you work with it in Drupal.
+                        <aside class="notes">
+                            First you have your Drupal site. and in that site you want to host your content.
                         </aside>
                     </section>
                     <section data-transition="none">
                         <h2>Nodes and Types</h2>
                         <img src="images/nodesAndTypes2.png">
-                        <aside>
-                            Content is stored as nodes. You can have as many nodes as you
-                            need.
+                        <aside class="notes">
+                            Each time we create a new piece of content and store it on our Drupal site, we can think
+                            of it as being a discrete object.
                         </aside>
                     </section>
                     <section data-transition="none">
                         <h2>Nodes and Types</h2>
                         <img src="images/nodesAndTypes3.png">
+                        <aside class="notes">
+                            Drupal calls these objects "nodes". So for every new piece of content you create, you
+                            create a node.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <h2>Nodes and Types</h2>
                         <img src="images/nodesAndTypes4.png">
+                        <aside class="notes">
+                            But nodes are only a start. When we look at our content, we can see that each piece of
+                            content can be categorized depending and what it is and how we use it.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Drupal stores content as nodes</h2>
+                        <p class="fragment">All nodes have a <em>content type</em></p>
+                        <p class="fragment">Content types are defined by the site builder</p>
+                        <p class="fragment">(That's you)</p>
+                        <aside class="notes">
+                            Okay, so we know that Drupal stores our pieces of content as nodes. And those nodes can be
+                            categorized. Drupal calls this a <em>Content Type</em>. All nodes have a content type.
+                            The types on your site are defined by the site builder...that's you.
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Categorizing Content</h1>
+                        <aside class="notes">
+                            Okay, so we get nodes. We know that content can be categorized into content types.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/butWhatIsIt1.png">
+                        <aside class="notes">
+                            "Yeah," you might be thinking right now, "but what is a content type?"
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/butWhatIsIt2.png">
+                        <aside class="notes">
+                            "Is it just a name?"
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/butWhatIsIt3.png">
+                        <aside class="notes">
+                            "Is it a category?"
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/butWhatIsIt4.png">
+                        <aside class="notes">
+                            "Why do I need more than just 'page'?" I mean, everything on the site is a page, so why are
+                            we wasting time with these content types?
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <h2>Let's Break that Down</h2>
+                        <img src="images/nodesAndTypes4.png">
+                        <aside class="notes">
+                            So let's break that down. We have our content stored as nodes on our Drupal site, and each
+                            of those nodes has a different content type. Right now, however, we're only thinking of our
+                            content as abstract little boxes.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <h2>Let's Break that Down</h2>
+                        <img src="images/typesAndFields.png">
+                        <aside class="notes">
+                            If we peek inside those little boxes we can see start to see the purpose behind content
+                            types. Here we see each node broken down into the data it contains. Each one of these has
+                            a title field, but what comes after it can be very different.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Different Types, Different Data</h2>
+                        <img src="images/diffTypeDifData.png">
+                        <p class="fragment">Different <em>Fields</em></p>
+                        <aside class="notes">
+                            When we categorize content, we can immediately see that different types contain different
+                            data. This picture node is very different from this page node. The picture has an image file
+                            and some metadata on how to display the image. The page, on the other hand, just as a body
+                            of text to display.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>But What About These Two?</h2>
+                        <img src="images/diffTypeDifUse.png">
+                        <aside class="notes">
+                            Okay, that's easy, but what about these two? This blog post and this page node both have a
+                            title and body. The fields are the same. So what makes them different?
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Different Types, Different Uses</h2>
+                        <img src="images/diffTypeDifUse.png">
+                        <p class="fragment">Different ways it's displayed or managed</p>
+                        <aside class="notes">
+                            Well, these two are different not because of different fields, but their use case. That is,
+                            the different ways they are displayed or managed. For a blog post, you generally want to
+                            know the author that wrote it. For a page -- like an "About Us" page -- the author isn't
+                            important. So even while the page has an author, we don't display it to visitors. The
+                            different ways we use content also makes something a different type.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>So What Is a Content Type?</h2>
+                        <blockquote>
+                            A content type is an administrator-defined template for your content. It gives your content,
+                            structure by specifying the sort of data it may contain as one or more fields.
+                        </blockquote>
                     </section>
                 </section>
                 <section>
