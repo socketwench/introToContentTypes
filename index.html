@@ -207,13 +207,188 @@
                     <section>
                         <h1>We Need Smarter Content</h1>
                     </section>
+                    <section data-transition="none">
+                        <img src="images/pushingContent1.png">
+                        <aside class="notes">
+                            What we essentially have today is unstructured content that pushes itself to the front-end.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/pushingContent2.png">
+                        <aside class="notes">
+                            This includes all the formatting, headers, images, and special tags inserted with WYSIWYG
+                            editors such as TinyMCE or ckeditor. This is historically a thing content creators have
+                            demanded, but it can also hurt us badly.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/pushingContent3.png">
+                        <aside class="notes">
+                            The various targets need to do the best they can with the content they are given.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/pushingContent4.png">
+                        <aside class="notes">
+                            This often leaves both the front end programmers, as well as the users begging for mercy
+                            at the hands of inflexable, tyrannical content.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Push Model of Content</h2>
+                        <p>Content specifies it's own format</p>
+                        <p>Doesn't account for target contexts</p>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/creepingWYSIWYG1.png">
+                        <aside class="notes">
+                            The problem with WYSIWYGs is that it's easy to start asking them to do more and more. At
+                            first, a few bottons for common formatting like bold, italics, and so on seem reasonable.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/creepingWYSIWYG2.png">
+                        <aside class="notes">
+                            Then we start adding more to the mix, including headers, callouts, and blockquotes.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/creepingWYSIWYG3.png">
+                        <aside class="notes">
+                            Oh! And don't forget media! We need to insert that somewhere in our content...
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/creepingWYSIWYG4.png">
+                        <aside class="notes">
+                            Pretty soon we're creating our own WYSIWYG plugins to support features found only on this
+                            one site, and often, only applicable to one target.
+                        </aside>
+                    </section>
+                    <section>
+                        <img src="images/theDrupliblob.png">
+                        <aside class="notes">
+                            When content specifies it's own format, it might as well be a binary blob. There's no
+                            consistency that machines can reliably understand.
+                        </aside>
+                    </section>
                     <section>
                         <h2>Can't we just truncate our blobs?</h2>
                         <p> <span class="fragment">Short answer:</span> <span class="fragment">No.</span> </p>
+                        <aside class="notes">
+                            So why can't we just truncate our blobs to fit each target? The short answer is, no. Don't
+                            do that.
+                        </aside>
                     </section>
                     <section>
                         <h2>Why Truncation is Bad</h2>
                         <blockquote class="fragment">Real AI Based on the Human Brain</blockquote>
+                        <blockquote class="fragment">Real AI Based...</blockquote>
+                        <blockquote class="fragment">Real AI Based on the...</blockquote>
+                        <blockquote class="fragment">Real AI Based on the Human...</blockquote>
+                        <aside class="notes">
+                            <p>
+                            The long answer requires some examples. Here we have a title for a piece of content on a
+                            game developer site. A particularly crude truncation algorithm might cut off just the last
+                            two letters, leaving the reader to imagine a dystopian future of omnipotent underwear.
+                            </p><p>
+                            Smarter algoritms will attempt to cut the title off on a word boundary, but the results
+                            are inconsistent and sometimes infuriating. Instead of clicking through, a reader might
+                            misinterpret the title and skip your content altogether.
+                            </p>
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/pullingContent1.png">
+                        <aside class="notes">
+                            We need to do away with our blobby, inflexible content and make smarter content that can
+                            be pulled. not pushed.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/pullingContent2.png">
+                        <aside class="notes">
+                            This way, each target can ask the content for what it needs...
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/pullingContent3.png">
+                        <aside class="notes">
+                            ...and the content can adapt itself and provide just the right kind of content.
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>What's all this have to do with content types?</h1>
+                    </section>
+                    <section>
+                        <h2>Categorizing Content is the First Step to Making it Adaptable</h2>
+                        <p class="fragment">But how?</p>
+                    </section>
+                    <section>
+                        <h2>Do a Content Audit</h2>
+                        <p>Not exhaustive, select representative content</p>
+                        <p>Create mock content if you don't have any</p>
+                    </section>
+                    <section>
+                        <img src="images/contentAudit.png">
+                    </section>
+                    <section>
+                        <h2>Look for Similar Kinds</h2>
+                        <p>Lots of different ways to do this</p>
+                        <p><a href="http://rosenfeldmedia.com/books/card-sorting/">Card Sorting</a> by Donna Spencer</p>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/contentAudit.png">
+                    </section>
+                    <section>
+                        <img src="images/lookForSimilarKinds1.png">
+                    </section>
+                    <section>
+                        <img src="images/lookForSimilarKinds2.png">
+                    </section>
+                    <section>
+                        <h2>Chunk up the Blobs</h2>
+                        <p>Break up the body</p>
+                        <p>Create discrete fields</p>
+                    </section>
+                    <section>
+                        <img src="images/lookForSimilarKinds2.png">
+                    </section>
+                    <section>
+                        <img src="images/chunkUpTheBlobs.png">
+                    </section>
+                    <section>
+                        <h2>Different Types, Different Data</h2>
+                        <img src="images/diffTypeDifData.png">
+                        <p class="fragment">Different <em>Fields</em></p>
+                        <aside class="notes">
+                            When we categorize content, we can immediately see that different types contain different
+                            data. This picture node is very different from this page node. The picture has an image file
+                            and some metadata on how to display the image. The page, on the other hand, just as a body
+                            of text to display.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>But What About These Two?</h2>
+                        <img src="images/diffTypeDifUse.png">
+                        <aside class="notes">
+                            Okay, that's easy, but what about these two? This blog post and this page node both have a
+                            title and body. The fields are the same. So what makes them different?
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Different Types, Different Uses</h2>
+                        <img src="images/diffTypeDifUse.png">
+                        <p class="fragment">Different ways it's displayed or managed</p>
+                        <aside class="notes">
+                            Well, these two are different not because of different fields, but their use case. That is,
+                            the different ways they are displayed or managed. For a blog post, you generally want to
+                            know the author that wrote it. For a page -- like an "About Us" page -- the author isn't
+                            important. So even while the page has an author, we don't display it to visitors. The
+                            different ways we use content also makes something a different type.
+                        </aside>
                     </section>
                 </section>
                 <section>
@@ -322,37 +497,7 @@
                             a title field, but what comes after it can be very different.
                         </aside>
                     </section>
-                    <section>
-                        <h2>Different Types, Different Data</h2>
-                        <img src="images/diffTypeDifData.png">
-                        <p class="fragment">Different <em>Fields</em></p>
-                        <aside class="notes">
-                            When we categorize content, we can immediately see that different types contain different
-                            data. This picture node is very different from this page node. The picture has an image file
-                            and some metadata on how to display the image. The page, on the other hand, just as a body
-                            of text to display.
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>But What About These Two?</h2>
-                        <img src="images/diffTypeDifUse.png">
-                        <aside class="notes">
-                            Okay, that's easy, but what about these two? This blog post and this page node both have a
-                            title and body. The fields are the same. So what makes them different?
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Different Types, Different Uses</h2>
-                        <img src="images/diffTypeDifUse.png">
-                        <p class="fragment">Different ways it's displayed or managed</p>
-                        <aside class="notes">
-                            Well, these two are different not because of different fields, but their use case. That is,
-                            the different ways they are displayed or managed. For a blog post, you generally want to
-                            know the author that wrote it. For a page -- like an "About Us" page -- the author isn't
-                            important. So even while the page has an author, we don't display it to visitors. The
-                            different ways we use content also makes something a different type.
-                        </aside>
-                    </section>
+
                     <section data-transition="none">
                         <h2>So What is a Content Type?</h2>
                         <img src="images/whatIsAContentType1.png">
@@ -485,11 +630,6 @@
                 <section>
                     <section>
                         <h1>Content Packages</h1>
-                    </section>
-                </section>
-                <section>
-                    <section>
-                        <h1>What if We Already Have Content?</h1>
                     </section>
                 </section>
                 <section>
