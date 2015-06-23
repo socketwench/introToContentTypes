@@ -79,7 +79,43 @@
 				</section>
                 <section>
                     <section>
+                        <h1>Drupal and Content</h1>
+                        <aside class="notes">
+                            So we're here today to talk about Drupal and Content types.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/drupalAndContent1.png">
+                        <aside class="notes">
+                            Most of us know that Drupal is a Content Management System, or CMS.
+                        </aside>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/drupalAndContent2.png">
+                        <aside class="notes">
+                            It's software that's used to manage our content.
+                        </aside>
+                    </section>
+                    <section data-transition="none zoom">
+                        <img src="images/drupalAndContent3.png">
+                        <aside class="notes">
+                            Drupal likes to categorize content into something called Content Types.
+                        </aside>
+                    </section>
+                    <section data-transition="zoom">
+                        <h2>We need to ask a bigger question</h2>
+                        <aside class="notes">
+                            That's all well and good, but for the moment, I want you to look past all of that. I want
+                            you to ask yourself a bigger question:
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
                         <h1>Why Structure Content?</h1>
+                        <aside class="notes">
+                            Why do we need to structure our content?
+                        </aside>
                     </section>
                     <section>
                         <h2>"Just Make it Work Like Word"</h2>
@@ -240,6 +276,7 @@
                         <p>Doesn't account for target contexts</p>
                     </section>
                     <section data-transition="none">
+                        <h2>Creeping WYSIWYG</h2>
                         <img src="images/creepingWYSIWYG1.png">
                         <aside class="notes">
                             The problem with WYSIWYGs is that it's easy to start asking them to do more and more. At
@@ -247,18 +284,21 @@
                         </aside>
                     </section>
                     <section data-transition="none">
+                        <h2>Creeping WYSIWYG</h2>
                         <img src="images/creepingWYSIWYG2.png">
                         <aside class="notes">
                             Then we start adding more to the mix, including headers, callouts, and blockquotes.
                         </aside>
                     </section>
                     <section data-transition="none">
+                        <h2>Creeping WYSIWYG</h2>
                         <img src="images/creepingWYSIWYG3.png">
                         <aside class="notes">
                             Oh! And don't forget media! We need to insert that somewhere in our content...
                         </aside>
                     </section>
                     <section data-transition="none">
+                        <h2>Creeping WYSIWYG</h2>
                         <img src="images/creepingWYSIWYG4.png">
                         <aside class="notes">
                             Pretty soon we're creating our own WYSIWYG plugins to support features found only on this
@@ -359,6 +399,11 @@
                     <section>
                         <img src="images/chunkUpTheBlobs.png">
                     </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>How do we know if our types are correct?</h1>
+                    </section>
                     <section>
                         <h2>Different Types, Different Data</h2>
                         <img src="images/diffTypeDifData.png">
@@ -390,35 +435,35 @@
                             different ways we use content also makes something a different type.
                         </aside>
                     </section>
-                </section>
-                <section>
                     <section>
-                        <h1>Building Adaptable Content</h1>
+                        <h2>How many types do we need?</h2>
+                        <p class="fragment">More than you think...</p>
+                        <p class="fragment">...but less than you fear.</p>
                     </section>
                 </section>
                 <section>
                     <section>
-                        <h1>Creating Content Types</h1>
+                        <h1>Building Adaptable Content</h1>
                         <aside class="notes">
                             Okay, now that we know what a content type is, let's go and make one.
                         </aside>
                     </section>
                     <section data-transition="none">
-                        <h2>What is a Content Type Made Of?</h2>
+                        <h2>Content Types in Drupal</h2>
                         <img src="images/contentTypeComponents1.png">
                         <aside class="notes">
-                            Content types are actually made of several pieces.
+                            Content types in Drupal are actually made of several pieces.
                         </aside>
                     </section>
                     <section data-transition="none">
-                        <h2>What is a Content Type Made Of?</h2>
+                        <h2>Content Types in Drupal</h2>
                         <img src="images/contentTypeComponents2.png">
                         <aside class="notes">
                             All content types provide a default field for a title.
                         </aside>
                     </section>
                     <section data-transition="none">
-                        <h2>What is a Content Type Made Of?</h2>
+                        <h2>Content Types in Drupal</h2>
                         <img src="images/contentTypeComponents3.png">
                         <aside class="notes">
                             When creating a content type, the site builder can also define zero or more custom fields.
@@ -427,7 +472,7 @@
                         </aside>
                     </section>
                     <section data-transition="none">
-                        <h2>What is a Content Type Made Of?</h2>
+                        <h2>Content Types in Drupal</h2>
                         <img src="images/contentTypeComponents4.png">
                         <aside class="notes">
                             Permissions are also associated with the content type -- not specific pieces of content.
@@ -435,7 +480,7 @@
                         </aside>
                     </section>
                     <section data-transition="none">
-                        <h2>What is a Content Type Made Of?</h2>
+                        <h2>Content Types in Drupal</h2>
                         <img src="images/contentTypeComponents5.png">
                         <aside class="notes">
                             Lastly, content types also provide key metadata. This includes the unique type itself,
@@ -465,13 +510,33 @@
                         <p>A default Body field</p>
                     </section>
                     <section>
+                        <img src="images/mainPage.png">
+                    </section>
+                    <section>
+                        <img src="images/nodeAddPage.png">
+                    </section>
+                    <section>
+                        <img src="images/nodeAdd.png">
+                    </section>
+                    <section>
                         <h2>Body Field</h2>
                         <p>Multi-line, WYSIWYG text field</p>
                         <p class="fragment">Optional in Drupal 8</p>
                         <p class="fragment">Required in Drupal 7 <span class="fragment">(kinda)</span></p>
                     </section>
+                    <section>
+                        <h2>Permissions</h2>
+                        <p>Grant create, edit, delete to user roles</p>
+                        <p>Admin > People > "Permissions" Tab</p>
+                    </section>
+                    <section>
+                        <img src="images/typePermissions.png">
+                    </section>
                 </section>
                 <section>
+                    <section>
+                        <h1>Chunking Up Content</h1>
+                    </section>
                     <section>
                         <h2>Adding New Fields</h2>
                         <p>Admin > Structure > Content Types > Click "Manage Fields"</p>
