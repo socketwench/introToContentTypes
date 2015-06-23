@@ -42,7 +42,8 @@
 			<div class="slides">
 				<section>
                     <h1>Introduction to<br />Content Types</h1>
-				</section>
+                    <p>socketwench.github.io/introToContentTypes</p>
+                </section>
 				<section>
 					<section data-transition="none">
 						<img src="images/socketwench/socketwench1.png" />
@@ -547,9 +548,60 @@
                     <section data-transition="none">
                         <img src="images/addField2.png">
                     </section>
+                    <section data-transition="none">
+                        <img src="images/addField3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/addField4.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/addField5.png">
+                    </section>
                     <section>
-                        <h2>Field Types</h2>
-                        <img src="images/fieldTypes.png">
+                        <h2>Reusing Fields</h2>
+                        <p>Fields exist independently of content types</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Adding New Field Types</h1>
+                    </section>
+                    <section>
+                        <h2>Check Core First!</h2>
+                        <p>Field may already be provided by core</p>
+                        <p>Many OotB field types in Drupal 8</p>
+                    </section>
+                    <section>
+                        <h2>Modules</h2>
+                        <p>Extend Drupal's functionality</p>
+                        <blockquote>"There's a module for that."</blockquote>
+                    </section>
+                    <section>
+                        <h2>Finding New Modules</h2>
+                        <p><a href="https://www.drupal.org/download">https://www.drupal.org/download</a></p>
+                        <p>Browse by most installed, or by category (recommended)</p>
+                    </section>
+                    <section>
+                        <h2>Recommended Drupal 7 Field Modules</h2>
+                        <p><a href="https://www.drupal.org/project/url">URL</a>* or <a href="https://www.drupal.org/project/link">Link</a></p>
+                        <p><a href="https://drupal.org/project/telephone">Telephone</a>* or <a href="https://www.drupal.org/project/phone">Phone</a></p>
+                        <p><a href="https://drupal.org/project/date">Date</a></p>
+                        <p><a href="https://www.drupal.org/project/email">Email</a></p>
+                        <small>*Drupal 8 Backports</small>
+                    </section>
+                    <section>
+                        <h2>Handling Multimedia</h2>
+                        <p>File and Image fields OotB</p>
+                        <p><a href="https://www.drupal.org/project/media">Media Module</a> for D7</p>
+                    </section>
+                    <section>
+                        <h2>Installing Modules</h2>
+                        <p><a href="https://www.drupal.org/documentation/install/modules-themes">Instructions on Drupal.org</a></p>
+                        <p class="fragment">
+                            <code>
+                                drush en -y <em>&lt;module_name&gt;</em>
+                            </code>
+                        </p>
                     </section>
                 </section>
                 <section>
@@ -586,7 +638,7 @@
 				history: true,
 				center: true,
 
-				transition: 'none', // none/fade/slide/convex/concave/zoom
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
                 backgroundTransition: 'none',
 
 				// Optional reveal.js plugins
