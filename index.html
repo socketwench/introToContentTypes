@@ -80,35 +80,36 @@
 				</section>
                 <section>
                     <section>
-                        <h1>Drupal and Content</h1>
-                        <aside class="notes">
-                            So we're here today to talk about Drupal and Content types.
-                        </aside>
+                        <h1>In the Beginning, There Were Pages</h1>
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/inTheBeginning1.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/inTheBeginning2.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/inTheBeginning3.png">
+                    </section>
+                    <section>
+                        <h2>And then came the first redesign...</h2>
+                        <p class="fragment">Owww...</p>
                     </section>
                     <section data-transition="none">
                         <img src="images/drupalAndContent1.png">
-                        <aside class="notes">
-                            Most of us know that Drupal is a Content Management System, or CMS.
-                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/drupalAndContent2.png">
-                        <aside class="notes">
-                            It's software that's used to manage our content.
-                        </aside>
                     </section>
-                    <section data-transition="none zoom">
+                    <section>
+                        <h2>CMSs Manage Content, not Pages</h2>
+                        <p class="fragment">Content could be a page, but didn't have to be</p>
+                    </section>
+                    <section data-transition="fade none">
+                        <img src="images/drupalAndContent2.png">
+                    </section>
+                    <section data-transition="none">
                         <img src="images/drupalAndContent3.png">
-                        <aside class="notes">
-                            Drupal likes to categorize content into something called Content Types.
-                        </aside>
-                    </section>
-                    <section data-transition="zoom">
-                        <h2>We need to ask a bigger question</h2>
-                        <aside class="notes">
-                            That's all well and good, but for the moment, I want you to look past all of that. I want
-                            you to ask yourself a bigger question:
-                        </aside>
                     </section>
                 </section>
                 <section>
@@ -180,69 +181,122 @@
                         <h2>"Just use the desktop site!"</h2>
                         <p class="fragment">Stuck in a cycle of zoom, scroll, repeat</p>
                         <img src="images/thisSucks.png" class="fragment">
+                        <aside class="notes">
+                            The first option is to just force mobile users to use the desktop site. While many mobile
+                            browsers today can handle this, you force your users into an endless cycle of zoom,
+                            scroll, and repeat. Needless to say, it sucks.
+                        </aside>
                     </section>
                     <section>
                         <h2>Separate Mobile Site</h2>
                         <p>Squeezes desktop-sized content into a tiny screen</p>
+                        <p>Callouts, embedded media, pagination</p>
                         <img src="images/weNeedSeparateChannels.png">
+                        <aside class="notes">
+                            So the desktop site won't work. Let's just make a separate site for mobile, that'll fix it,
+                            right? Well, no. Your content is still desktop-sized, and you're trying to squeeze it into
+                            a tiny screen. This can include callouts, embedded media, and pagination that seem natural
+                            on the desktop, but intrusive and odd on mobile. Our content is a problem in of itself.
+                            Separating the sites isn't enough, we need to separate our channels.
+                        </aside>
                     </section>
-                    <section>
+                    <section data-transition="none">
                         <img src="images/separateChannels1.png">
                         <aside class="notes">
-                            Notes.
+                            Separating our content channels seems like a solution at first. Both the site design and
+                            content fit their targets well.
                         </aside>
                     </section>
-                    <section>
+                    <section data-transition="none">
                         <img src="images/separateChannels2.png">
                         <aside class="notes">
-                            Notes.
+                            But it comes at a high cost. We may need to hire different teams of developers to work on
+                            each channel's site.
                         </aside>
                     </section>
-                    <section>
+                    <section data-transition="none">
                         <img src="images/separateChannels3.png">
                         <aside class="notes">
-                            Notes.
+                            Then we need separate writers that take the same outline of content, and reproduce it to
+                            fit their target platform.
                         </aside>
                     </section>
-                    <section>
+                    <section data-transition="none">
                         <img src="images/separateChannels4.png">
                         <aside class="notes">
-                            Notes.
+                            To make sure content standards are enforced for each channel, we need separate editors. Soon
+                            you have two completely different teams, working on the same content, on completely
+                            different technology stacks.
                         </aside>
                     </section>
                     <section>
                         <h2>Separate channels multiply work</h2>
                         <p>Separate processes, standards, and staff</p>
                         <p>Works only as a stop gap</p>
+                        <aside class="notes">
+                            What we get from this is that separate channels multiply work. We need separate processes,
+                            standards, and even staff. This works, but only as a stop gap. It doesn't solve our
+                            problems.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/separateChannelProblems.png">
+                        <aside class="notes">
+                            Separating your mobile and desktop sites is a usability nightmare. It breaks sharing links
+                            across platforms, and makes your developers sad.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/tooManyChannels1.png">
+                        <aside class="notes">
+                            And the pain doesn't stop there.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/tooManyChannels2.png">
+                        <aside class="notes">
+                            Sure there's desktop and mobile, but that's not the only target we have today.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/tooManyChannels3.png">
+                        <aside class="notes">
+                            We're already seeing an explosion in the wearable device space.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/tooManyChannels4.png">
+                        <aside class="notes">
+                            And soon we'll be expecting your content everywhere, on TVs, fridges, on devices we're
+                            not even expecting.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/tooManyChannels5.png">
+                        <aside class="notes">
+                            There's just too many channels to separate.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/theProblemIsContent1.png">
+                        <aside class="notes">
+                            But maybe we're going about this the wrong way. Maybe the problem isn't separating channels
+                            or different front end targets.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/theProblemIsContent2.png">
+                        <aside class="notes">
+                            What if the the problem isn't our site, what if the problem is our content?
+                        </aside>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h1>We Need Smarter Content</h1>
+                        <aside class="notes">
+                            Maybe we need smarter content.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <img src="images/pushingContent1.png">
@@ -273,8 +327,13 @@
                     </section>
                     <section>
                         <h2>Push Model of Content</h2>
-                        <p>Content specifies it's own format</p>
+                        <p>Content often a blob of rich text</p>
                         <p>Doesn't account for target contexts</p>
+                        <aside class="notes">
+                            We're essentially caught in a push model of content. Since the bulk of our content is a
+                            large blob of rich text, it can't be displayed in more intelligent ways that take into
+                            account for the context of our target.
+                        </aside>
                     </section>
                     <section data-transition="none">
                         <h2>Creeping WYSIWYG</h2>
@@ -340,6 +399,7 @@
                         </aside>
                     </section>
                     <section data-transition="none">
+                        <h2>What We Want Instead</h2>
                         <img src="images/pullingContent1.png">
                         <aside class="notes">
                             We need to do away with our blobby, inflexible content and make smarter content that can
@@ -347,16 +407,90 @@
                         </aside>
                     </section>
                     <section data-transition="none">
+                        <h2>What We Want Instead</h2>
                         <img src="images/pullingContent2.png">
                         <aside class="notes">
                             This way, each target can ask the content for what it needs...
                         </aside>
                     </section>
                     <section data-transition="none">
+                        <h2>What We Want Instead</h2>
                         <img src="images/pullingContent3.png">
                         <aside class="notes">
                             ...and the content can adapt itself and provide just the right kind of content.
                         </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Why is our content so stupid</h1>
+                    </section>
+                    <section>
+                        <h2>You Can't Query a Body Field</h2>
+                        <p>No matter the WYSIWYG buttons or smart tags you use</p>
+                        <aside class="notes">
+                            You can't query a body field no matter how many WYSIWYG buttons or smart tags you use. Once
+                            your content is in rich text, it's locked into a single use foreach.
+                        </aside>
+                    </section>
+                    <section data-background="images/junkDrawer.jpg" data-background-transition="fade">
+                        <h2>"Body" has no Semantic Meaning</h2>
+                        <p>It's the junk drawer of content</p>
+                        <aside class="notes">
+                            The problem is that a "body" field doesn't really mean anything semantically. It might
+                            as well be called "place where you put stuff". The body field is essentially a junk
+                            drawer for your content. You can throw anything you want in there, and as a result,
+                            it doesn't have any organization.
+                        </aside>
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/junkDrawerHouse1.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/junkDrawerHouse2.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/junkDrawerHouse3.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/junkDrawerHouse4.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/junkDrawerHouse5.png">
+                    </section>
+                    <section>
+                        <h2>Junk Drawer Content Limits Reuse</h2>
+                        <p>You can't recombine pieces of content later</p>
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody1.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody2.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody3.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody4.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody5.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody6.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody7.png">
+                    </section>
+                    <section data-transition="fade">
+                        <img src="images/breakUpBody8.png">
+                    </section>
+                    <section>
+                        <h2>Smarter Content:</h2>
+                        <p class="fragment">Does not bake-in formatting</p>
+                        <p class="fragment">Provides front-ends with what they need</p>
+                        <p class="fragment">Chunky fields, not blobby bodies</p>
                     </section>
                 </section>
                 <section>
@@ -380,13 +514,13 @@
                         <p>Lots of different ways to do this</p>
                         <p><a href="http://rosenfeldmedia.com/books/card-sorting/">Card Sorting</a> by Donna Spencer</p>
                     </section>
-                    <section data-transition="none">
+                    <section data-transition="fade">
                         <img src="images/contentAudit.png">
                     </section>
-                    <section>
+                    <section data-transition="fade">
                         <img src="images/lookForSimilarKinds1.png">
                     </section>
-                    <section>
+                    <section data-transition="fade">
                         <img src="images/lookForSimilarKinds2.png">
                     </section>
                     <section>
@@ -394,10 +528,10 @@
                         <p>Break up the body</p>
                         <p>Create discrete fields</p>
                     </section>
-                    <section>
+                    <section data-transition="fade">
                         <img src="images/lookForSimilarKinds2.png">
                     </section>
-                    <section>
+                    <section data-transition="fade">
                         <img src="images/chunkUpTheBlobs.png">
                     </section>
                 </section>
@@ -539,6 +673,10 @@
                         <h1>Chunking Up Content</h1>
                     </section>
                     <section>
+                        <h2>Breaking Up the Body Field</h2>
+                        <p>SOMETHING GOES HERE</p>
+                    </section>
+                    <section>
                         <h2>Adding New Fields</h2>
                         <p>Admin > Structure > Content Types > Click "Manage Fields"</p>
                     </section>
@@ -560,6 +698,7 @@
                     <section>
                         <h2>Reusing Fields</h2>
                         <p>Fields exist independently of content types</p>
+                        <p>SOMETHING GOES HERE</p>
                     </section>
                 </section>
                 <section>
@@ -591,8 +730,9 @@
                     </section>
                     <section>
                         <h2>Handling Multimedia</h2>
-                        <p>File and Image fields OotB</p>
-                        <p><a href="https://www.drupal.org/project/media">Media Module</a> for D7</p>
+                        <p class="fragment">File and Image fields OotB</p>
+                        <p class="fragment"><a href="https://www.drupal.org/project/media">Media Module</a> for D7</p>
+                        <p class="fragment"><a href="http://2015.tcdrupal.org/session/state-media-drupal-8">The State of Media in Drupal 8</a>, 2:15pm #235</p>
                     </section>
                     <section>
                         <h2>Installing Modules</h2>
@@ -633,6 +773,9 @@
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+                width: 1024,
+                height: 763,
+
 				controls: false,
 				progress: true,
 				history: true,
