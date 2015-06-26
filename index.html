@@ -431,7 +431,7 @@
                 </section>
                 <section>
                     <section>
-                        <h1>More Channels, More Problems</h1>
+                        <h1>More Channels,<br/>More Problems</h1>
                     </section>
                     <section>
                         <h2>"Just use the desktop site!"</h2>
@@ -635,7 +635,7 @@
                         <img src="images/breakUpBody8.png">
                     </section>
                     <section>
-                        <h2>Smarter Content:</h2>
+                        <h2>Smarter Content</h2>
                         <p class="fragment">Does not bake-in formatting</p>
                         <p class="fragment">Provides front-ends with what they need</p>
                         <p class="fragment">Chunky fields, not blobby bodies</p>
@@ -647,7 +647,7 @@
                     </section>
                     <section>
                         <h2>Adding New Fields</h2>
-                        <p>Admin > Structure > Content Types > Click "Manage Fields"</p>
+                        <p>Manage > Structure > Content Types > Click "Manage Fields"</p>
                     </section>
                     <section data-transition="none">
                         <img src="images/addField1.png">
@@ -667,7 +667,24 @@
                     <section>
                         <h2>Reusing Fields</h2>
                         <p>Fields exist independently of content types</p>
-                        <p>SOMETHING GOES HERE</p>
+                        <p>Some performance advantages</p>
+                    </section>
+                    <section>
+                        <img src="images/reuseExistingField.png">
+                    </section>
+                    <section>
+                        <h2>When to reuse fields</h2>
+                        <p>It's <em>exactly</em> the same across content types</p>
+                        <p>It's settings will never change, no matter the type</p>
+                    </section>
+                    <section>
+                        <h2>Most fields aren't reusable</h2>
+                        <p>Requirements change as your site evolves</p>
+                        <p>Performance gains negated easily elsewhere</p>
+                    </section>
+                    <section>
+                        <img src="images/fieldCategories.png">
+                        <small>*Core in D8, Contrib in D7</small>
                     </section>
                 </section>
                 <section>
@@ -715,16 +732,119 @@
                 </section>
                 <section>
                     <section>
-                        <h1>Content Packages</h1>
+                        <h1>Blobby Chunks</h1>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/blobbyChunks1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/blobbyChunks2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/blobbyChunks3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/blobbyChunks4.png">
+                    </section>
+                    <section data-transition="zoom">
+                        <img src="images/blobsAreBack.png">
+                    </section>
+                    <section>
+                        <h2>What did we learn about truncation?</h2>
+                        <p class="fragment">It's bad for bodies, <em class="fragment">and fields too</em>.</p>
+                        <p class="fragment">Our fields need to be flexible!</p>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deblobbedChunks1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deblobbedChunks2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deblobbedChunks3.png">
+                    </section>
+                    <section data-background="images/contentPackageBackground.png" data-background-size="contain">
+                        <h2>Adaptable Content isn't just fields</h2>
+                        <p class="fragment">It's packages of content</p>
+                        <p class="fragment">Bundles field groups with business rules</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Field De-Duplicating</h1>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/entitiesNotFields1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/entitiesNotFields2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/entitiesNotFields3.png">
+                    </section>
+                    <section>
+                        <h2>Breaking up the body<br>does not de-duplicate fields</h2>
+                        <p class="fragment">Some "fields" are actually content by themselves!</p>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deduplicatingFields1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deduplicatingFields2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deduplicatingFields3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deduplicatingFields4.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/deduplicatingFields5.png">
+                    </section>
+                    <section>
+                        <h2>Composite Content</h2>
+                        <p class="fragment">Bundle up multiple fields, and content types</p>
+                        <p class="fragment">Easier to manage, harder to compose</p>
+                    </section>
+                    <section>
+                        <h2>Assembling Composite Content</h2>
+                        <p>Entity/Node Reference field type</p>
+                        <p>Blocks</p>
+                        <p>Panels and Panelizer (Drupal 7)</p>
+                        <p>Entity Embed (Drupal 8)</p>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h1>Summary</h1>
                     </section>
+                    <section>
+                        <h2>Content types are just the first step</h2>
+                    </section>
+                    <section>
+                        <h2>Separating channels isn't the answer</h2>
+                        <p class="fragment">Multiplies work, only a stop gap solution</p>
+                    </section>
+                    <section>
+                        <h2>The body field is a junk drawer</h2>
+                        <p class="fragment">Limits adaptability and remixing</p>
+                    </section>
+                    <section>
+                        <h2>Use groups of fields to<br>make content packages</h2>
+                    </section>
+                    <section>
+                        <h2>De-duplicate with composite content</h2>
+                    </section>
+                    <section>
+                        <h2>Food for Thought</h2>
+                        <p><a href="http://abookapart.com/products/content-strategy-for-mobile">Content Strategy for Moble</a> by Karen McGrane</p>
+                        <p><a href="https://austin2014.drupal.org/session/battle-body-field-drupal-and-future-wysiwyg.html">The Battle for the Body Field</a> by Jeff Eaton</p>
+                        <p><a href="http://rosenfeldmedia.com/books/card-sorting/">Card Sorting</a> by Donna Spencer</p>
+                    </section>
                 </section>
                 <section>
                     <h1>Thank you!</h1>
+                    <p>socketwench.github.io/introToContentTypes</p>
                     <p>
                         Background by <a href=" http://artwyrd.deviantart.com/art/Interwoven1-185083495">Artwyrd</a>
                     </p>
